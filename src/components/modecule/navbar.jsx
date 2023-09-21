@@ -56,7 +56,7 @@ const Navbar = () => {
       <div
         className={`w-full h-[100vh] ${
           isNavbarActive ? "fixed" : "hidden"
-        } lg:hidden bg-dark-blue top-0 left-0`}
+        } lg:hidden bg-dark-blue top-0 left-0 p-[4%]`}
       >
         <div className="w-full h-fit flex lg:hidden justify-end items-end p-[6%] md:py-[5%] relative">
           <div onClick={toggleNavbar} className="w-fit h-fit relative">
@@ -76,6 +76,13 @@ const Navbar = () => {
             </svg>
           </div>
         </div>
+        <ul className="w-full h-fit p-[8%] font-montserrat font-normal text-lg text-white  flex flex-col gap-10 mt-8">
+          <li>Timeline</li>
+          <li>Overview</li>
+          <li>FAQs</li>
+          <li>Contact</li>
+        </ul>
+        <Btn text="Register" width="w-[172px]" />
       </div>
       <hr />
     </div>
