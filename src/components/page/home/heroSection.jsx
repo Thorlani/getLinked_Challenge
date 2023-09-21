@@ -1,5 +1,14 @@
 import React from "react";
 import Btn from "../../atom/button";
+import Star1 from "../../../assets/icons/star1.png";
+import Star2 from "../../../assets/icons/star2.png";
+import Star3 from "../../../assets/icons/star3.png";
+import Bob from "../../../assets/icons/bob.png";
+import Chain from "../../../assets/icons/chain.png";
+import Blast from "../../../assets/icons/blast.png";
+import Flare from "../../../assets/images/flare.png";
+import Stars from "../../../assets/images/stars.png";
+import Metrix from "../../../assets/images/metrix.png";
 
 const HeroSection = () => {
   return (
@@ -7,17 +16,17 @@ const HeroSection = () => {
       <div className="w-full h-[90vh] flex items-center flex-col px-[4%] pt-4">
         <div className="w-full h-[10vh] flex justify-end">
           <img
-            src="/public/icons/star1.png"
+            src={Star1}
             alt="Star"
             className="absolute w-[20px] object-contain left-[9%] top-[27%]"
           />
           <img
-            src="/public/icons/star2.png"
+            src={Star2}
             alt="Star"
             className="absolute w-[20px] object-contain left-[59%] top-[32%]"
           />
           <img
-            src="/public/icons/star3.png"
+            src={Star3}
             alt="Star"
             className="absolute w-[20px] object-contain left-[35%] top-[87%]"
           />
@@ -43,7 +52,7 @@ const HeroSection = () => {
         <div className="w-full h-[80vh] flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-[50%] h-full flex flex-col justify-center relative">
             <img
-              src="/public/images/flare.png"
+              src={Flare}
               alt="purple flare"
               className="absolute z-10 opacity-40 object-contain top-[-60%] right-[-100px]"
             />
@@ -53,7 +62,7 @@ const HeroSection = () => {
               </h1>
               <div>
                 <img
-                  src="/public/icons/bob.png"
+                  src={Bob}
                   alt="bob"
                   className="absolute w-[40px] object-contain right-20 -top-10"
                 />
@@ -65,12 +74,12 @@ const HeroSection = () => {
               </h1>
               <div>
                 <img
-                  src="/public/icons/chain.png"
+                  src={Chain}
                   alt="chain"
                   className="absolute w-[70px] object-contain -right-8 top-1"
                 />
                 <img
-                  src="/public/icons/blast.png"
+                  src={Blast}
                   alt="blast"
                   className="absolute w-[50px] object-contain right-[-100px] top-2"
                 />
@@ -98,18 +107,18 @@ const HeroSection = () => {
           <div className="w-full lg:w-[50%] h-full relative">
             <div className="w-full h-full relative z-20 bg-hero-section bg-center bg-no-repeat bg-contain"></div>
             <img
-              src="/public/images/stars.png"
+              src={Stars}
               alt="stars"
               className="absolute z-30 w-[90%] h-[90%] object-contain top-0 left-0"
             />
             <img
-              src="/public/images/flare.png"
+              src={Flare}
               alt="purple flare"
               className="absolute z-20 w-[120%] h-[120%] object-contain top-[-100px] right-[-100px]"
             />
             <img
-              src="/public/images/metrix.png"
-              alt="purple flare"
+              src={Metrix}
+              alt="Metrix"
               className="absolute z-10 w-[120%] object-contain top-0"
             />
           </div>

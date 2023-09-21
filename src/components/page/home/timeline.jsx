@@ -1,5 +1,8 @@
 import React from "react";
 import Subtext from "../../atom/subtext";
+import SataGra from "../../../assets/icons/sata gra.png";
+import Star1 from "../../../assets/icons/star1.png";
+import Star4 from "../../../assets/icons/star4.png";
 
 const Timeline = () => {
   return (
@@ -7,18 +10,18 @@ const Timeline = () => {
       <div className="w-full h-fit p-[4%] flex flex-col items-center justify-center overflow-x-clip relative">
         <div className="w-full h-full bg-[#261d45]/20 bg-bottom absolute z-10">
           <img
-            src="/public/icons/sata gra.png"
+            src={SataGra}
             alt="sata icon"
             className="absolute left-[20%] top-[15%]  object-contain"
           />
           <img
-            src="/public/icons/star1.png"
-            alt="sata icon"
+            src={Star1}
+            alt="star icon"
             className="absolute left-[85%] top-[48%] w-[20px] object-contain"
           />
           <img
-            src="/public/icons/star4.png"
-            alt="sata icon"
+            src={Star4}
+            alt="star icon"
             className="absolute left-[8%] top-[91.3%] w-[20px] object-contain"
           />
         </div>

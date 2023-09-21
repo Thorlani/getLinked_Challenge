@@ -1,6 +1,10 @@
 import React from "react";
 import Subtext from "../../atom/subtext";
 import Btn from "../../atom/button";
+import Flare from "../../../assets/images/flare.png";
+import Star2 from "../../../assets/icons/star2.png";
+import Star1 from "../../../assets/icons/star1.png";
+import Sata from "../../../assets/icons/sata.png";
 
 const Judge = () => {
   return (
@@ -10,22 +14,22 @@ const Judge = () => {
         <div className="w-[110px] h-[110px] rounded-[50%] circle absolute z-10 left-[14%] top-[-7%]"></div>
         <img src="/public/images/criteria.png" alt="criteria image" className="relative z-20" />
         <img
-          src="/public/icons/star2.png"
+          src={Star2}
           alt="star icon"
           className="absolute right-[50%] bottom-[40%] opacity-40"
         />
         <img
-          src="/public/icons/star1.png"
+          src={Star1}
           alt="star icon"
           className="absolute right-10 -bottom-3"
         />
         <img
-          src="/public/icons/sata.png"
+          src={Sata}
           alt="sata icon"
           className="absolute left-[22%] top-[-18%]"
         />
         <img
-            src="/public/images/flare.png"
+            src={Flare}
             alt="flare"
             className="absolute z-10 opacity-40 object-cover left-[-18%] top-[16%] "
           />
@@ -82,7 +86,7 @@ const Judge = () => {
           <Btn text="Read More" width="w-[172px]" />
         </ul>
         <img
-          src="/public/images/flare.png"
+          src={Flare}
           alt="flare"
           className="absolute z-10 opacity-40 object-cover bottom-[-40%] right-[-60%] "
         />

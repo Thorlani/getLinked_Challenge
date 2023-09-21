@@ -1,6 +1,13 @@
 import React from "react";
 import Subtext from "../../atom/subtext";
 import Drop from "../../atom/accordian";
+import Sata from "../../../assets/icons/sata.png";
+import Star4 from "../../../assets/icons/star4.png";
+import Star1 from "../../../assets/icons/star1.png";
+import Question1 from "../../../assets/icons/question1.png";
+import Question2 from "../../../assets/icons/question2.png";
+import SataGra from "../../../assets/icons/sata gra.png";
+import FaqImage from "../../../assets/images/faq.png";
 
 const Faq = () => {
   return (
@@ -8,7 +15,7 @@ const Faq = () => {
       <div className="w-full h-fit p-[4%] pt-[8%] flex flex-col lg:flex-row items-center overflow-x-clip">
         <div className="w-full lg:w-[50%] h-fit relative">
           <img
-            src="/public/icons/sata.png"
+            src={Sata}
             alt="sata icon"
             className="absolute left-[-2%] top-[-9%]"
           />
@@ -25,42 +32,42 @@ const Faq = () => {
         </div>
         <div className="w-full lg:w-[50%] h-fit relative">
           <img
-            src="/public/images/faq.png"
+            src={FaqImage}
             alt="a man sitting on the cloud"
             className="mt-5"
           />
           <img
-            src="/public/icons/sata gra.png"
-            alt="sata icon"
+            src={SataGra}
+            alt="sata gra icon"
             className="absolute left-[20%] top-[21%] w-[15px] object-contain"
           />
           <img
-            src="/public/icons/star4.png"
+            src={Star4}
             alt="sata icon"
             className="absolute left-[12%] top-[49%] w-[15px] object-contain"
           />
           <img
-            src="/public/icons/star1.png"
+            src={Star1}
             alt="sata icon"
             className="absolute left-[72%] top-[94%] w-[20px] object-contain"
           />
           <img
-            src="/public/icons/sata gra.png"
+            src={SataGra}
             alt="sata icon"
             className="absolute left-[51%] top-[-4%] w-[15px] object-contain"
           />
           <img
-            src="/public/icons/question1.png"
+            src={Question1}
             alt="question"
             className="absolute left-[36%] top-[-13%]"
           />
           <img
-            src="/public/icons/question2.png"
+            src={Question2}
             alt="question"
             className="absolute left-[14%] top-[-9%]"
           />
           <img
-            src="/public/icons/question2.png"
+            src={Question2}
             alt="question"
             className="absolute left-[60%] top-[-9%]"
           />

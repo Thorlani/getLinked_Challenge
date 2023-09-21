@@ -1,5 +1,9 @@
 import React from "react";
 import Subtext from "../../atom/subtext";
+import Star1 from "../../../assets/icons/star1.png";
+import Star2 from "../../../assets/icons/star2.png";
+import Flare from "../../../assets/images/flare.png";
+import Rule from "../../../assets/images/rules.png";
 
 const Rules = () => {
   return (
@@ -7,14 +11,19 @@ const Rules = () => {
       <div className="w-full h-fit p-[4%] flex flex-col lg:flex-row items-center overflow-x-clip">
         <div className="w-full lg:w-[50%] h-fit relative z-20">
           <img
-            src="/public/images/flare.png"
+            src={Flare}
             alt="flare"
             className="absolute z-10 opacity-40 object-cover top-[-120%] "
           />
           <img
-            src="/public/icons/star2.png"
+            src={Star2}
             alt="star icon"
             className="absolute z-20 -top-5 right-[50%]"
+          />
+          <img
+            src={Star1}
+            alt="star icon"
+            className="absolute z-20 top-[90%] right-[4%] w-[20px] object-contain"
           />
           <Subtext width="170" whiteText="Rules and " pinkText="Guidelines" />
           <p className="text-white font-montserrat text-sm max-w-[520px] leading-[27.5px]">
@@ -27,9 +36,9 @@ const Rules = () => {
           </p>
         </div>
         <div className="w-full lg:w-[50%] h-fit relative z-20">
-          <img src="/public/images/rules.png" alt="A sitting lady image" />
+          <img src={Rule} alt="A sitting lady image" />
           <img
-            src="/public/images/flare.png"
+            src={Flare}
             alt="flare"
             className="absolute z-10 opacity-40 object-cover bottom-[-40%] right-[-60%] "
           />
