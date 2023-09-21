@@ -32,10 +32,20 @@ const Secure = () => {
           alt="sata icon"
           className="absolute z-20 left-[62%] top-[63%] w-[15px]  object-contain"
         />
+         <img
+          src={Star1}
+          alt="star icon"
+          className="absolute z-20 left-[57%] top-[73%] w-[15px]  object-contain"
+        />
+         <img
+          src={Star4}
+          alt="star icon"
+          className="absolute z-20 left-[93%] top-[85%] w-[20px]  object-contain"
+        />
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute left-[-2%] top-[3%] w-[15px]  object-contain"
+          className="absolute left-[-2%] top-[83%] w-[15px]  object-contain"
         />
         <img
           src={Flare}
