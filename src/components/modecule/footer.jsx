@@ -15,24 +15,24 @@ const Footer = () => {
       <div className="w-full h-fit py-[4%] px-[8%] grid grid-cols-1 lg:grid-cols-[1.5fr_.6fr_.6fr] gap-5 gap-x-14 items-start relative">
         <div className="w-full h-full absolute z-10 ">
         <img
-          src={Star4}
+          src={Star1}
           alt="star icon"
-          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
+          className="absolute left-[2%] top-[28%] w-[15px]  object-contain"
+        />
+        <img
+          src={SataGra}
+          alt="star icon"
+          className="absolute left-[42%] top-[88%] w-[18px]  object-contain"
         />
         <img
           src={Star4}
           alt="star icon"
-          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
+          className="absolute right-[30%] top-[24%] w-[15px]  object-contain"
         />
         <img
-          src={Star4}
+          src={Star1}
           alt="star icon"
-          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
-        />
-        <img
-          src={Star4}
-          alt="star icon"
-          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
+          className="absolute right-[12%] top-[68%] w-[17px]  object-contain"
         />
         </div>
         <div>
