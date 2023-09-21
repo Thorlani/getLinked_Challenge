@@ -1,17 +1,49 @@
 import React from "react";
 import Subtext from "../../atom/subtext";
 import Btn from "../../atom/button";
+import Flare from "../../../assets/images/flare.png";
+import Star2 from "../../../assets/icons/star2.png";
+import Star4 from "../../../assets/icons/star4.png";
+import Star1 from "../../../assets/icons/star1.png";
+import SataGra from "../../../assets/icons/sata gra.png";
+import Criteria from "../../../assets/images/criteria.png";
 
 const Secure = () => {
   return (
     <div className="w-full h-fit px-[4%] py-[8%] bg-[#261d45]/20 flex flex-col lg:flex-row items-end overflow-x-clip relative">
       <div className="w-full h-full absolute z-10 ">
         <img
-          src="/public/icons/sata gra.png"
-          alt="sata icon"
-          className="absolute left-[20%] top-[5%]  object-contain"
+          src={Star4}
+          alt="star icon"
+          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
         />
         <img
+          src={SataGra}
+          alt="sata icon"
+          className="absolute left-[42%] top-[33%] w-[20px]  object-contain"
+        />
+        <img
+          src={Star1}
+          alt="star icon"
+          className="absolute left-[82%] top-[40%] w-[15px]  object-contain"
+        />
+         <img
+          src={SataGra}
+          alt="sata icon"
+          className="absolute z-20 left-[62%] top-[63%] w-[15px]  object-contain"
+        />
+        <img
+          src={SataGra}
+          alt="sata icon"
+          className="absolute left-[-2%] top-[3%] w-[15px]  object-contain"
+        />
+        <img
+          src={Flare}
+          alt="A flare image"
+          className="absolute z-10 top-[20%] lg:top-[48%] right-[-64%] lg:left-[-28%] w-[640px] h-[640px] object-contain"
+        />
+       
+        {/* <img
           src="/public/icons/sata gra.png"
           alt="sata icon"
           className="absolute left-[72.7%] top-[22.5%] w-[20px]  object-contain"
@@ -35,7 +67,7 @@ const Secure = () => {
           src="/public/icons/star1.png"
           alt="sata icon"
           className="absolute left-[20%] top-[86.3%] w-[15px] object-contain"
-        />
+        /> */}
       </div>
       <div className="w-full h-full flex flex-col lg:flex-row lg:gap-10 items-end relative z-10">
         <div className="w-full lg:w-[50%] h-fit flex flex-col gap-[3rem] relative">

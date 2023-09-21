@@ -5,6 +5,7 @@ import Flare from "../../../assets/images/flare.png";
 import Star2 from "../../../assets/icons/star2.png";
 import Star1 from "../../../assets/icons/star1.png";
 import Sata from "../../../assets/icons/sata.png";
+import Criteria from "../../../assets/images/criteria.png";
 
 const Judge = () => {
   return (
@@ -12,7 +13,7 @@ const Judge = () => {
     <div className="w-full h-fit p-[4%] flex flex-col lg:flex-row items-center overflow-x-clip">
       <div className="w-full lg:w-[50%] h-fit relative">
         <div className="w-[110px] h-[110px] rounded-[50%] circle absolute z-10 left-[14%] top-[-7%]"></div>
-        <img src="/public/images/criteria.png" alt="criteria image" className="relative z-20" />
+        <img src={Criteria} alt="criteria image" className="relative z-20" />
         <img
           src={Star2}
           alt="star icon"

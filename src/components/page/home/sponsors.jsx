@@ -2,10 +2,6 @@ import React from "react";
 import Subtext from "../../atom/subtext";
 import SataGra from "../../../assets/icons/sata gra.png";
 import Star1 from "../../../assets/icons/star1.png";
-import Star4 from "../../../assets/icons/star4.png";
-import Sliver from "../../../assets/icons/sliver.png";
-import Gold from "../../../assets/icons/gold.png";
-import Bronze from "../../../assets/icons/bronze.png";
 import Flare from "../../../assets/images/flare.png";
 import Sponsor from "../../../assets/images/sponsors.png";
 
@@ -17,6 +13,21 @@ const Sponsors = () => {
           src={Flare}
           alt="A flare image"
           className="absolute z-10 top-[-10%] lg:top-[-8%] left-[0%] lg:left-[-8%] w-[640px] h-[640px] object-contain"
+        />
+        <img
+          src={Star1}
+          alt="A star icon"
+          className="absolute z-10 top-[77%] left-[56%] w-[20px] object-contain"
+        />
+        <img
+          src={SataGra}
+          alt="A sata icon"
+          className="absolute z-10 top-[40%] left-[56%] w-[15px] object-contain"
+        />
+        <img
+          src={SataGra}
+          alt="A sata icon"
+          className="absolute z-10 top-[26%] left-[15%] w-[20px] object-contain"
         />
         <img
           src={Flare}
