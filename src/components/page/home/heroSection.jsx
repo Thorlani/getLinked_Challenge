@@ -108,7 +108,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="w-full lg:w-[50%] h-full relative">
-            <div className="w-full h-full mt-[0.4rem] lg:mt-0 relative z-20 bg-hero-section bg-center bg-no-repeat bg-contain"></div>
+            <div className="w-full h-full relative z-20 bg-hero-section bg-center bg-no-repeat bg-contain"></div>
             <img
               src={Stars}
               alt="stars"
