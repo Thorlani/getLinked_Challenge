@@ -49,7 +49,7 @@ const HeroSection = () => {
             </svg>
           </div>
         </div>
-        <div className="w-full h-[80vh] flex flex-col lg:flex-row items-center">
+        <div className="w-full h-full lg:h-[80vh] flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-[50%] h-full flex flex-col justify-center relative">
             <img
               src={Flare}

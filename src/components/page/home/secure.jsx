@@ -2,11 +2,11 @@ import React from "react";
 import Subtext from "../../atom/subtext";
 import Btn from "../../atom/button";
 import Flare from "../../../assets/images/flare.png";
-import Star2 from "../../../assets/icons/star2.png";
 import Star4 from "../../../assets/icons/star4.png";
 import Star1 from "../../../assets/icons/star1.png";
 import SataGra from "../../../assets/icons/sata gra.png";
-import Criteria from "../../../assets/images/criteria.png";
+import Mark from "../../../assets/icons/mark.png";
+import Policies from "../../../assets/images/policies.png";
 
 const Secure = () => {
   return (
@@ -116,7 +116,7 @@ const Secure = () => {
               <ul className="flex flex-col gap-5">
                 <li className="w-full h-fit flex justify-between items-start">
                   <img
-                    src="/public/icons/mark.png"
+                    src={Mark}
                     alt="mark icon"
                     className="mt-1"
                   />
@@ -126,7 +126,7 @@ const Secure = () => {
                   </p>
                 </li>
                 <li className="flex justify-between items-start">
-                  <img src="/public/icons/mark.png" alt="mark icon" />
+                  <img src={Mark} alt="mark icon" />
                   <p className="font-montserrat text-white text-sm max-w-[4o1px] leading-[27.76px] ml-3">
                     You are licensed to use the item available at any free
                     source sites, for your project developement
@@ -139,9 +139,9 @@ const Secure = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[50%] h-fit relative bg-secured bg-no-repeat bg-top">
+        <div className="w-full lg:w-[50%] h-fit relative bg-secured bg-no-repeat bg-contain">
           <img
-            src="/public/images/policies.png"
+            src={Policies}
             alt="A man standing on a padlock"
           />
         </div>
