@@ -261,6 +261,7 @@ const RegisterForm = (props) => {
         </div>
         <div className="w-full hidden lg:flex justify-center items-center">
           <Button
+            type="button"
             onClick={handleSubmit}
             radius="small"
             className={`btn text-white shadow-lg w-full`}
@@ -270,6 +271,7 @@ const RegisterForm = (props) => {
         </div>
         <div className="w-full flex lg:hidden justify-center items-center">
           <Button
+            type="button"
             onClick={handleSubmit}
             radius="small"
             className={`btn text-white shadow-lg w-[172px]`}

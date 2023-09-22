@@ -23,7 +23,6 @@ const ContactForm = () => {
     import.meta.env.VITE_BASE_API_URL + "/hackathon/contact-form"
   }`;
 
-
   //Function to submit form
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -119,6 +118,7 @@ const ContactForm = () => {
         </div>
         <div className="w-full flex justify-center items-center">
           <Button
+            type="button"
             onClick={handleSubmit}
             radius="small"
             className={`btn text-white shadow-lg w-[172px]`}
