@@ -11,8 +11,10 @@ import Star2 from "../../../assets/icons/star2.png";
 import Star3 from "../../../assets/icons/star3.png";
 import Flare from "../../../assets/images/flare.png";
 
+
 const ContactSection = () => {
   const navigate = useNavigate();
+
   return (
     <div className="w-full h-full relative p-[8%] overflow-clip">
       <div className="w-full h-full absolute top-0 left-0 z-10">
@@ -74,7 +76,7 @@ const ContactSection = () => {
           </ul>
         </div>
         <div className="w-full lg:w-[50%] h-full">
-          <ContactForm />
+          <ContactForm  />
         </div>
       </div>
     </div>

@@ -9,8 +9,11 @@ import Blast from "../../../assets/icons/blast.png";
 import Flare from "../../../assets/images/flare.png";
 import Stars from "../../../assets/images/stars.png";
 import Metrix from "../../../assets/images/metrix.png";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@nextui-org/react";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <>
       <hr />
@@ -93,7 +96,13 @@ const HeroSection = () => {
                 win a Big prize
               </p>
               <div className="mt-6 lg:mt-10">
-                <Btn text="Register" width="w-[172px]" />
+                <Button
+                  onClick={() => navigate("/register")}
+                  radius="small"
+                  className={`btn text-white shadow-lg w-[172px]`}
+                >
+                  <p className="font-montserrat">Register</p>
+                </Button>
               </div>
               <div className="flex font-normal w-[200px] lg:w-[250px] mt-7 lg:mt-11 justify-between font-unica text-5xl lg:text-6xl text-white">
                 <p>

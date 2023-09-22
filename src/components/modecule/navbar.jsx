@@ -21,7 +21,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <div className="relative z-[9999]">
+    <div className="relative z-40">
       <div className="w-full h-fit hidden lg:flex justify-between items-center pt-[43px] pb-[25px] px-[4%]">
         <h2
           onClick={() => navigate("/")}
