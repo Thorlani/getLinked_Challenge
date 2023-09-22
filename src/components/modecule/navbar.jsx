@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import Btn from "../atom/button";
 import { CancelIcon } from "../../assets/cancel";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -37,7 +37,9 @@ const Navbar = (props) => {
             <li>FAQs</li>
             <li
               onClick={() => navigate("/contact")}
-              className={`${location.pathname === "/contact" || "/register" ? "contact" : ""}`}
+              className={`${
+                location.pathname === "/contact" || "/register" ? "contact" : ""
+              }`}
             >
               Contact
             </li>
@@ -102,7 +104,12 @@ const Navbar = (props) => {
           <li>Timeline</li>
           <li>Overview</li>
           <li>FAQs</li>
-          <li onClick={() => navigate("/contact")} className={`${location.pathname === "/contact" ? "contact" : ""}`}>Contact</li>
+          <li
+            onClick={() => navigate("/contact")}
+            className={`${location.pathname === "/contact" ? "contact" : ""}`}
+          >
+            Contact
+          </li>
           <li>
             <Btn
               navigation={() => navigate("/register")}

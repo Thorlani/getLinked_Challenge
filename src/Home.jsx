@@ -13,7 +13,7 @@ import Secure from "./components/page/home/secure";
 
 const Home = () => {
   return (
-    <div className=" overflow-x-clip">
+    <div className="relative overflow-x-clip">
       <Navbar />
       <HeroSection />
       <Intro />
