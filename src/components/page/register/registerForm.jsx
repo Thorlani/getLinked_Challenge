@@ -224,16 +224,16 @@ const RegisterForm = (props) => {
                 className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
               >
                 <option value="">select</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+                <option  className="text-strong-pink" value="1">1</option>
+                <option  className="text-strong-pink" value="2">2</option>
+                <option  className="text-strong-pink" value="3">3</option>
+                <option  className="text-strong-pink" value="4">4</option>
+                <option  className="text-strong-pink" value="5">5</option>
+                <option  className="text-strong-pink" value="6">6</option>
+                <option  className="text-strong-pink" value="7">7</option>
+                <option  className="text-strong-pink" value="8">8</option>
+                <option  className="text-strong-pink" value="9">9</option>
+                <option  className="text-strong-pink" value="10">10</option>
               </select>
               {inputChecker === true && registerForm.groupSize === "" && (
                 <p className="text-[red] text-xs mt-2">
