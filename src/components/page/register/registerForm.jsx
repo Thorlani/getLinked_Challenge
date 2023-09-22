@@ -1,18 +1,26 @@
 import React from "react";
+import RegisterImageMobile from "../../../assets/images/registerImageMobile.png";
+import { useNavigate } from "react-router-dom";
 import Btn from "../../atom/button";
-import { InstaIcon } from "../../../assets/insta";
-import { TwitterIcon } from "../../../assets/twitter";
-import { FacebookIcon } from "../../../assets/facebook";
-import { LinkedInIcon } from "../../../assets/linkedIn";
 
-const ContactForm = () => {
+const RegisterForm = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-w-full min-h-full formBackground p-[8%] flex flex-col gap-8">
-      <div className="font-clash-display text-[20px] max-w-[200px] md:w-full font-semibold text-strong-pink">
-        <h3>Questions or need assistance?</h3>
-        <h3>Let us know about it!</h3>
-      </div>
       <form className="w-full h-fit flex flex-col gap-10">
+        <h2 className="font-clash-display text-[20px] max-w-[200px] md:w-full font-semibold text-strong-pink">
+          Register
+        </h2>
+        <div className="w-full flex lg:hidden justify-center items-center ">
+          <img src={RegisterImageMobile} alt="A man sitting on a seat" />
+        </div>
+        <div>
+          <div className="flex">
+            <p className="font-montserrat text-xs lg:text-sm">Be part of this movement!</p>
+            <div></div>
+          </div>
+          <p className="font-montserrat text-xl lg:text-2xl">CREATE YOUR ACCOUNT</p>
+        </div>
         <div>
           <input
             placeholder="Firstname"
@@ -42,22 +50,9 @@ const ContactForm = () => {
         <div className="w-full flex justify-center items-center">
           <Btn text="Submit" submit={() => {}} width="w-[172px]" />
         </div>
-        <div className="w-full flex lg:hidden justify-center items-center">
-          <ul>
-            <li className="flex flex-col gap justify-center items-center">
-              <span className=" text-strong-pink">Share on</span>
-              <div className="flex items-center gap-4">
-                <InstaIcon />
-                <TwitterIcon />
-                <FacebookIcon />
-                <LinkedInIcon />
-              </div>
-            </li>
-          </ul>
-        </div>
       </form>
     </div>
   );
 };
 
-export default ContactForm;
+export default RegisterForm;

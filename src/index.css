@@ -20,6 +20,10 @@ hr {
     #fe34b9 100%
   );
 }
+.registerBtn {
+  background: #140F28;
+  border: 2px solid #9A39FF;
+}
 .circle {
   background: linear-gradient(270deg, #8f01fe 0%, #ff2674 97.24%);
 }

@@ -6,7 +6,7 @@ const Btn = (props) => {
     <Button
       onClick={props.navigation}
       radius="small"
-      className={`btn text-white shadow-lg ${props.width}`}
+      className={`${props.register ? "registerBtn" : "btn"} text-white shadow-lg ${props.width}`}
     >
       {props.text}
     </Button>

@@ -3,7 +3,7 @@ import Btn from "../atom/button";
 import { CancelIcon } from "../../assets/cancel";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li>FAQs</li>
             <li
               onClick={() => navigate("/contact")}
-              className={`${location.pathname === "/contact" ? "contact" : ""}`}
+              className={`${location.pathname === "/contact" || "/register" ? "contact" : ""}`}
             >
               Contact
             </li>
@@ -46,6 +46,7 @@ const Navbar = () => {
             navigation={() => navigate("/register")}
             text="Register"
             width="w-[172px]"
+            register={props.register}
           />
         </div>
       </div>
