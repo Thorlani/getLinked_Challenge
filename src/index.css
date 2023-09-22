@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-    background-color: #150E28;
-    color: #fff;
+  background-color: #150e28;
+  color: #fff;
 }
 
 hr {
@@ -21,10 +21,34 @@ hr {
   );
 }
 .circle {
-  background: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%);
+  background: linear-gradient(270deg, #8f01fe 0%, #ff2674 97.24%);
 }
 .timeline {
-  background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+  background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
+}
+.contact {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.formBackground {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .formBackground {
+    background: none;
+  }
 }
 
 @font-face {

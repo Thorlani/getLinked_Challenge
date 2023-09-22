@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Btn from "../atom/button";
 import { CancelIcon } from "../../assets/cancel";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isNavbarActive, setIsNavbarActive] = useState(false);
 
   const toggleNavbar = () => {
     setIsNavbarActive(!isNavbarActive);
-
   };
 
   if (isNavbarActive === true) {
@@ -21,22 +23,37 @@ const Navbar = () => {
   return (
     <div className="relative z-[9999]">
       <div className="w-full h-fit hidden lg:flex justify-between items-center pt-[43px] pb-[25px] px-[4%]">
-        <h2 className="text-white text-4xl font-clash-display">
+        <h2
+          onClick={() => navigate("/")}
+          className="text-white text-4xl font-clash-display cursor-pointer"
+        >
           get<span className="text-strong-pink">Linked</span>
         </h2>
 
         <div className="w-[54%] flex items-center justify-between">
-          <ul className=" font-montserrat font-normal text-white w-[60%] flex justify-between items-center">
+          <ul className=" font-montserrat font-normal cursor-pointer text-white w-[60%] flex justify-between items-center">
             <li>Timeline</li>
             <li>Overview</li>
             <li>FAQs</li>
-            <li>Contact</li>
+            <li
+              onClick={() => navigate("/contact")}
+              className={`${location.pathname === "/contact" ? "contact" : ""}`}
+            >
+              Contact
+            </li>
           </ul>
-          <Btn text="Register" width="w-[172px]" />
+          <Btn
+            navigation={() => navigate("/register")}
+            text="Register"
+            width="w-[172px]"
+          />
         </div>
       </div>
       <div className="w-full h-fit flex lg:hidden justify-between items-center p-[6%] md:py-[5%] relative">
-        <h2 className="text-white text-xl md:text-2xl font-clash-display">
+        <h2
+          onClick={() => navigate("/")}
+          className="text-white text-xl md:text-2xl font-clash-display"
+        >
           get<span className="text-strong-pink">Linked</span>
         </h2>
         <ul
@@ -79,16 +96,21 @@ const Navbar = () => {
         </div>
         <ul
           id="navbarItems"
-          className="w-full h-fit p-[8%] font-montserrat font-normal text-lg text-white relative flex flex-col gap-10 mt-8"
+          className="w-full h-fit p-[8%] font-montserrat font-normal cursor-pointer text-lg text-white relative flex flex-col gap-10 mt-8"
         >
           <li>Timeline</li>
           <li>Overview</li>
           <li>FAQs</li>
-          <li>Contact</li>
-        <li><Btn text="Register" width="w-[172px]" /></li>
+          <li onClick={() => navigate("/contact")} className={`${location.pathname === "/contact" ? "contact" : ""}`}>Contact</li>
+          <li>
+            <Btn
+              navigation={() => navigate("/register")}
+              text="Register"
+              width="w-[172px]"
+            />
+          </li>
         </ul>
       </div>
-      <hr />
     </div>
   );
 };

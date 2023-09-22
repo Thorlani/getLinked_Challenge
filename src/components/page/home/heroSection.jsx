@@ -13,6 +13,7 @@ import Metrix from "../../../assets/images/metrix.png";
 const HeroSection = () => {
   return (
     <>
+      <hr />
       <div className="w-full h-[90vh] flex items-center flex-col px-[4%] pt-4">
         <div className="w-full h-[10vh] flex justify-end">
           <img

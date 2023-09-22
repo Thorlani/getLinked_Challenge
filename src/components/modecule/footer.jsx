@@ -60,7 +60,7 @@ const Footer = () => {
             <li>Timeline</li>
             <li>Faq</li>
             <li>Register</li>
-            <li className="flex items-start gap-3">
+            <li className="flex items-center gap-3">
               <span className="text-strong-pink">Follow us</span>
               <InstaIcon />
               <TwitterIcon />
