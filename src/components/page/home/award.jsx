@@ -78,7 +78,7 @@ const Award = () => {
           <img
             src={Gold}
             alt="gold medal"
-            className="absolute top-[32%] lg:top-[30%] left-[30.5%] lg:left-[28.5%] w-[125px] lg:w-[250px] h-[125px] lg:h-[250px] object-cover z-20"
+            className="absolute top-[32%] lg:top-[11%] left-[30.5%] lg:left-[28.5%] w-[125px] lg:w-[250px] h-[125px] lg:h-[250px] object-cover z-20"
           />
           <div className="w-full h-fit grid grid-cols-3 gap-5 mt-[180px] relative z-10">
             <div className="w-[90px] lg:w-full h-[126px] lg:h-[266px] border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
