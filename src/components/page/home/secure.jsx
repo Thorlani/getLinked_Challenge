@@ -10,7 +10,7 @@ import Policies from "../../../assets/images/policies.png";
 
 const Secure = () => {
   return (
-    <div className="w-full h-fit px-[4%] py-[8%] bg-[#261d45]/20 flex flex-col lg:flex-row items-end overflow-x-clip relative">
+    <div className="w-full h-fit px-[4%] py-[10%] lg:p-[4%] bg-[#261d45]/20 flex flex-col lg:flex-row items-end overflow-x-clip relative">
       <div className="w-full h-full absolute z-10 ">
         <img
           src={Star4}
@@ -80,23 +80,23 @@ const Secure = () => {
         /> */}
       </div>
       <div className="w-full h-full flex flex-col lg:flex-row lg:gap-10 items-end relative z-10">
-        <div className="w-full lg:w-[50%] h-fit flex flex-col gap-[3rem] relative">
-          <div>
+        <div className="w-full lg:w-[50%] h-fit flex flex-col justify-center items-center lg:justify-start lg:items-start gap-7 lg:gap-[3rem] relative">
+          <div className="w-full flex flex-col justify-center items-center lg:justify-start lg:items-start">
             <Subtext
-              width="300"
+              width="max-w-[188px] lg:max-w-[300px]"
               whiteText="Privacy Policy and "
               pinkText="Terms"
             />
-            <p className="font-montserrat mt-[1rem] text-white/70 text-sm max-w-[342px] leading-[27.76px]">
+            <p className="font-montserrat lg:mt-[1rem] text-white/70 text-sm max-w-[342px] leading-[27.76px]">
               Last updated on September 12, 2023
             </p>
           </div>
-          <p className="font-montserrat text-white text-sm max-w-[438px] leading-[27.76px]">
+          <p className="font-montserrat text-white text-[13px] lg:text-sm max-w-[316px] lg:max-w-[438px] text-center lg:text-left leading-[27.76px]">
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
           </p>
-          <div className="w-full h-fit border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative p-[8%] flex flex-col gap-6">
-            <p className="font-montserrat text-white text-sm max-w-[425px] leading-[27.76px]">
+          <div className="w-full h-fit border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative p-[8%] flex flex-col gap-6 justify-center items-center lg:justify-start lg:items-start">
+            <p className="font-montserrat text-white text-[13px] lg:text-sm max-w-[270px] lg:max-w-[425px] text-center lg:text-left leading-[25.968px] lg:leading-[27.76px]">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
               Policy outlines how we collect, use, disclose, and safeguard your
@@ -106,10 +106,10 @@ const Secure = () => {
             </p>
             <div className="flex flex-col gap-5">
               <div className="flex flex-col gap-2">
-                <h5 className="font-montserrat text-base text-strong-pink font-bold">
+                <h5 className="font-montserrat text-[13px] lg:text-base text-strong-pink font-bold">
                   Licensing Policy
                 </h5>
-                <h5 className="font-montserrat text-base font-bold">
+                <h5 className="font-montserrat text-[12px] lg:text-base font-bold">
                   Here are terms of our Standard License:
                 </h5>
               </div>
@@ -120,14 +120,14 @@ const Secure = () => {
                     alt="mark icon"
                     className="mt-1"
                   />
-                  <p className="font-montserrat text-white text-sm max-w-[4o1px] leading-[27.76px] ml-3">
+                  <p className="font-montserrat text-white text-[12px] lg:text-sm max-w-[218px] lg:max-w-[401px] leading-[27.76px] ml-[14px] lg:ml-3">
                     The Standard License grants you a non-exclusive right to
                     navigate and register for our event
                   </p>
                 </li>
                 <li className="flex justify-between items-start">
                   <img src={Mark} alt="mark icon" />
-                  <p className="font-montserrat text-white text-sm max-w-[4o1px] leading-[27.76px] ml-3">
+                  <p className="font-montserrat text-white text-sm max-w-[218px] lg:max-w-[401px] leading-[27.76px] ml-[14px] lg:ml-3">
                     You are licensed to use the item available at any free
                     source sites, for your project developement
                   </p>

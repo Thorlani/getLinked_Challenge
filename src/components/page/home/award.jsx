@@ -11,7 +11,7 @@ import AwardImage from "../../../assets/images/award.png";
 
 const Award = () => {
   return (
-    <div className="w-full h-fit px-[4%] py-[8%] flex flex-col lg:flex-row items-center justify-center overflow-x-clip relative">
+    <div className="w-full h-fit px-[4%] py-[8%] flex flex-col items-center justify-center overflow-x-clip relative">
       <div className="w-full h-full absolute z-10">
         <img
           src={SataGra}
@@ -44,58 +44,88 @@ const Award = () => {
           className="absolute left-[20%] top-[86.3%] w-[15px] object-contain"
         />
       </div>
-      <div className="w-full h-full relative z-20 flex flex-col lg:flex-row">
-        <div className="w-full lg:w-[50%] h-fit relative">
-          <img src={Flare} alt="A flare image" className="absolute z-10 top-[-18%] left-[8%]" />
-          <img src={AwardImage} alt="An award image" className="relative z-20" />
-        </div>
-        <div className="w-full lg:w-[50%] h-fit relative">
-        <img src={Flare} alt="An award image" className="absolute z-10 top-[48%] left-[88%]" />
-          <div className="max-w-[174px]">
-            <Subtext whiteText="Prizes and " pinkText="Rewards" width="174" />
-          </div>
-          <p className="max-w-[361px] font-montserrat text-sm mt-3">
+      <div className="w-full h-full flex flex-col justify-center items-center lg:justify-end lg:items-end relative z-30">
+        <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+          <Subtext
+            whiteText="Prizes and "
+            pinkText="Rewards"
+            width="max-w-[174px]"
+          />
+          <p className="max-w-[277px] lg:max-w-[361px] text-center lg:text-left font-montserrat text-sm mt-3">
             Highlight of the prizes or rewards for winners and for participants.
           </p>
+        </div>
+      </div>
+      <div className="w-full h-full relative z-20 flex flex-col lg:flex-row mt-10 lg:mt-0">
+        <div className="w-full lg:w-[50%] h-fit relative">
+          <img
+            src={Flare}
+            alt="A flare image"
+            className="absolute z-10 top-[-18%] left-[8%]"
+          />
+          <img
+            src={AwardImage}
+            alt="An award image"
+            className="relative z-20"
+          />
+        </div>
+        <div className="w-full lg:w-[50%] h-fit relative">
+          <img
+            src={Flare}
+            alt="An award image"
+            className="absolute z-10 top-[48%] left-[88%]"
+          />
           <img
             src={Gold}
             alt="gold medal"
-            className="absolute top-[30%] left-[28.5%] w-[250px] h-[250px] object-cover z-20"
+            className="absolute top-[32%] lg:top-[30%] left-[30.5%] lg:left-[28.5%] w-[125px] lg:w-[250px] h-[125px] lg:h-[250px] object-cover z-20"
           />
           <div className="w-full h-fit grid grid-cols-3 gap-5 mt-[180px] relative z-10">
-            <div className="w-full h-[266px] border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
+            <div className="w-[90px] lg:w-full h-[126px] lg:h-[266px] border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
               <img
                 src={Sliver}
                 alt="sliver medal"
-                className="absolute top-[-28%] w-[179px] object-contain "
+                className="absolute top-[-42%] lg:top-[-28%]  w-[179px] object-contain "
               />
               <div className="flex flex-col justify-center items-center">
-                <h4 className="text-3xl font-montserrat font-bold">2nd</h4>
-                <p className="text-2xl font-montserrat font-semibold">Runner</p>
-                <p className="text-2xl font-montserrat font-semibold text-strong-pink">
+                <h4 className="text-xs lg:text-3xl font-montserrat font-bold">
+                  2nd
+                </h4>
+                <p className="text-xs lg:text-2xl font-montserrat font-semibold">
+                  Runner
+                </p>
+                <p className="text-sm lg:text-2xl font-montserrat font-semibold text-strong-pink">
                   N300,000
                 </p>
               </div>
             </div>
-            <div className="w-full h-[266px] mt-[8%] border-purple bg-[#903AFF1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
+            <div className="w-[90px] lg:w-full h-[126px] lg:h-[266px] mt-[8%] border-purple bg-[#903AFF1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
               <div className="flex flex-col justify-center items-center">
-                <h4 className="text-4xl font-montserrat font-bold">1st</h4>
-                <p className="text-2xl font-montserrat font-semibold">Runner</p>
-                <p className="text-2xl font-montserrat font-bold text-purple">
+                <h4 className="text-sm lg:text-4xl font-montserrat font-bold">
+                  1st
+                </h4>
+                <p className="text-xs lg:text-2xl font-montserrat font-semibold">
+                  Runner
+                </p>
+                <p className="text-sm lg:text-2xl font-montserrat font-bold text-purple">
                   N400,000
                 </p>
               </div>
             </div>
-            <div className="w-full h-[266px] border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
+            <div className="w-[90px] lg:w-full h-[126px] lg:h-[266px] border-strong-pink bg-[#D434FE1F] border-1 rounded-lg relative px-[4%] py-[16%] flex flex-col justify-end items-center">
               <img
                 src={Bronze}
                 alt="bronze medal"
-                className="absolute top-[-28%] w-[179px] object-contain "
+                className="absolute top-[-42%] lg:top-[-28%] w-[179px] object-contain "
               />
               <div className="flex flex-col justify-center items-center">
-                <h4 className="text-3xl font-montserrat font-bold">3nd</h4>
-                <p className="text-2xl font-montserrat font-semibold">Runner</p>
-                <p className="text-2xl font-montserrat font-bold text-strong-pink">
+                <h4 className="text-xs lg:text-3xl font-montserrat font-bold">
+                  3nd
+                </h4>
+                <p className="text-xs lg:text-2xl font-montserrat font-semibold">
+                  Runner
+                </p>
+                <p className="text-sm lg:text-2xl font-montserrat font-bold text-strong-pink">
                   N150,000
                 </p>
               </div>

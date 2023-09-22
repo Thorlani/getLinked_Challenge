@@ -8,7 +8,7 @@ import Sponsor from "../../../assets/images/sponsors.png";
 const Sponsors = () => {
   return (
     <>
-      <div className="w-full h-fit p-[4%] py-[8%] flex flex-col items-center overflow-x-clip relative">
+      <div className="w-full h-fit px-[4%] py-[10%] lg:py-[8%] flex flex-col items-center overflow-x-clip relative">
         <img
           src={Flare}
           alt="A flare image"

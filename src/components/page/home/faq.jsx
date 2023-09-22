@@ -13,18 +13,18 @@ const Faq = () => {
   return (
     <>
       <div className="w-full h-fit p-[4%] pt-[8%] flex flex-col lg:flex-row items-center overflow-x-clip">
-        <div className="w-full lg:w-[50%] h-fit relative">
+        <div className="w-full lg:w-[50%] h-fit relative flex flex-col justify-center items-center lg:justify-start lg:items-start mb-[7rem] lg:mb-0">
           <img
             src={Sata}
             alt="sata icon"
             className="absolute left-[-2%] top-[-9%]"
           />
           <Subtext
-            width="253"
+            width="max-w-[158px] lg:max-w-[253px]"
             whiteText="Frequently Ask "
             pinkText="Question"
           />
-          <p className="font-montserrat mt-[1rem] text-white text-sm max-w-[342px] leading-[27.76px]">
+          <p className="font-montserrat mt-[1rem] text-white text-[13px] lg:text-sm max-w-[316px] lg:max-w-[342px] text-center lg:text-left leading-[27.76px]">
             We got answers to the questions that you might want to ask about
             getlinked Hackathon 1.0
           </p>

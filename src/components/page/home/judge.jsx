@@ -10,9 +10,9 @@ import Criteria from "../../../assets/images/criteria.png";
 const Judge = () => {
   return (
     <>
-    <div className="w-full h-fit p-[4%] flex flex-col lg:flex-row items-center overflow-x-clip">
+    <div className="w-full h-fit px-[4%] py-[10%] lg:p-[4%] flex flex-col lg:flex-row items-center overflow-x-clip">
       <div className="w-full lg:w-[50%] h-fit relative">
-        <div className="w-[110px] h-[110px] rounded-[50%] circle absolute z-10 left-[14%] top-[-7%]"></div>
+        <div className="w-[110px] h-[110px] rounded-[50%] circle absolute z-10 left-[14%] top-[-7%] hidden lg:block"></div>
         <img src={Criteria} alt="criteria image" className="relative z-20" />
         <img
           src={Star2}
@@ -35,13 +35,13 @@ const Judge = () => {
             className="absolute z-10 opacity-40 object-cover left-[-18%] top-[16%] "
           />
       </div>
-      <div className="w-full lg:w-[50%] h-fit relative z-20">
+      <div className="w-full lg:w-[50%] h-fit relative z-20 flex flex-col justify-center items-center lg:justify-start lg:items-start">
         <Subtext
           whiteText="Judging Criteria "
           pinkText="Key attributes"
-          width="267"
+          width="max-w-[167px] lg:max-w-[267px]"
         />
-        <ul className="font-montserrat flex flex-col gap-4 mt-[1rem] text-white text-sm max-w-[530px] leading-[27.76px]">
+        <ul className="font-montserrat flex flex-col gap-4 mt-[1rem] text-white text-[13px] lg:text-sm max-w-[316px] lg:max-w-[520px] text-center lg:text-left leading-[27.76px]">
           <li>
             <p>
               <span className="text-pink">Innovation and Creativity:{" "}</span>
@@ -84,7 +84,7 @@ const Judge = () => {
               requirements.
             </p>
           </li>
-          <Btn text="Read More" width="w-[172px]" />
+          <div className="w-full flex justify-center items-center lg:justify-start lg:justify-start"><Btn text="Read More" width="w-[172px]" /></div>
         </ul>
         <img
           src={Flare}

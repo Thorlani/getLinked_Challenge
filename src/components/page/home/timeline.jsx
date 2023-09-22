@@ -27,8 +27,8 @@ const Timeline = () => {
         </div>
         <div className="w-full h-full relative z-20">
           <div className="flex flex-col justify-center items-center">
-            <Subtext width="138" whiteText="Timeline" pinkText="" />
-            <p className="font-montserrat text-white text-sm max-w-[346px] text-center leading-[27.76px]">
+            <Subtext width="max-w-[92px] lg:max-w-[138px]" whiteText="Timeline" pinkText="" />
+            <p className="font-montserrat text-white text-sm max-w-[292px] lg:max-w-[346px] text-center leading-[24.136px] lg:leading-[27.76px]">
               Here is the breakdown of the time we anticipate using for the
               upcoming event.
             </p>

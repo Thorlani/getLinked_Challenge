@@ -12,7 +12,7 @@ import SataGra from "../../assets/icons/sata gra.png";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-fit py-[4%] px-[8%] grid grid-cols-1 lg:grid-cols-[1.5fr_.6fr_.6fr] gap-5 gap-x-14 items-start relative">
+      <div className="w-full h-fit p-[10%] lg:py-[4%] lg:px-[8%] grid grid-cols-1 lg:grid-cols-[1.5fr_.6fr_.6fr] gap-5 gap-x-14 items-start relative">
         <div className="w-full h-full absolute z-10 ">
         <img
           src={Star1}
@@ -36,10 +36,10 @@ const Footer = () => {
         />
         </div>
         <div>
-          <h2 className="text-white text-4xl font-clash-display">
+          <h2 className="text-white text-[20px] lg:text-4xl font-clash-display">
             get<span className="text-strong-pink">Linked</span>
           </h2>
-          <p className="font-montserrat text-xs max-w-[412px] leading-[27.76px]">
+          <p className="font-montserrat text-xs max-w-[268px] lg:max-w-[412px] leading-[20.688px] lg:leading-[27.76px]">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
