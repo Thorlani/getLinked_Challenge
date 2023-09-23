@@ -48,7 +48,8 @@ const ContactForm = () => {
               email: "",
               firstname: "",
               message: "",
-            })
+            }),
+            window.location.reload(true)
           )
           .catch();
       } catch (error) {
@@ -57,6 +58,7 @@ const ContactForm = () => {
     }
   };
 
+  //Form input fields onChange function
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
     setContactForm((prevFormData) => {
@@ -68,7 +70,7 @@ const ContactForm = () => {
   };
   return (
     <div className="min-w-full min-h-full formBackground p-[8%] flex flex-col gap-8">
-      <div className="font-clash-display text-[20px] max-w-[200px] md:w-full font-semibold text-strong-pink">
+      <div className="font-clash-display text-[20px] w-full font-semibold text-strong-pink">
         <h3>Questions or need assistance?</h3>
         <h3>Let us know about it!</h3>
       </div>
