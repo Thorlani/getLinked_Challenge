@@ -13,17 +13,17 @@ const Timeline = () => {
           <img
             src={SataGra}
             alt="sata icon"
-            className="absolute left-[20%] top-[15%]  object-contain"
+            className="absolute w-4 lg:w-fit left-[20%] top-[13%] lg:top-[15%]  object-contain"
           />
           <img
             src={Star1}
             alt="star icon"
-            className="absolute left-[85%] top-[48%] w-[20px] object-contain"
+            className="absolute left-[85%] top-[48%] w-4 lg:w-[20px] object-contain"
           />
           <img
             src={Star4}
             alt="star icon"
-            className="absolute left-[8%] top-[91.3%] w-[20px] object-contain"
+            className="absolute left-[5%] lg:left-[8%] top-[91.3%] w-4 lg:w-[20px] object-contain"
           />
         </div>
         <div className="w-full h-full relative z-20">
