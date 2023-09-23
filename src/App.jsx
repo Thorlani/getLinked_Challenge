@@ -12,6 +12,7 @@ import {
 import Home from "./Home";
 import Contact from "./Contact";
 import Register from "./Register";
+import imagesLoaded from "imagesloaded";
 const Root = () => {
   return (
     <>
@@ -34,14 +35,13 @@ const queryClient = new QueryClient();
 
 function App() {
   useEffect(() => {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
     window.addEventListener("load", () => {
-      const preloader = document.querySelector(".preloader");
-
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
       setTimeout(() => {
         document.documentElement.style.overflow = "auto";
         document.body.style.overflow = "auto";
+        const preloader = document.querySelector(".preloader");
         preloader.classList.add("preloader-finished");
       }, 3000);
     });
