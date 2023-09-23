@@ -18,17 +18,17 @@ const Sponsors = () => {
         <img
           src={Star1}
           alt="A star icon"
-          className="absolute z-10 top-[77%] left-[56%] w-[20px] object-contain"
+          className="absolute z-10 top-[77%] left-[56%]  w-4 lg:w-[20px] object-contain"
         />
         <img
           src={SataGra}
           alt="A sata icon"
-          className="absolute z-10 top-[40%] left-[56%] w-[15px] object-contain"
+          className="absolute z-10 top-[40%] left-[56%]  w-4 lg:w-[15px] object-contain"
         />
         <img
           src={SataGra}
           alt="A sata icon"
-          className="absolute z-10 top-[26%] left-[15%] w-[20px] object-contain"
+          className="absolute z-10 top-[26%] left-[15%]  w-4 lg:w-[20px] object-contain"
         />
         <img
           src={Flare}
