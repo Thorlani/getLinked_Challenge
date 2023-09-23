@@ -31,7 +31,6 @@ body {
 
 .preloader-finished {
   display: none;
-  pointer-events: none;
 }
 
 .spinner {

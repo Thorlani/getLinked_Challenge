@@ -43,7 +43,7 @@ function App() {
         document.documentElement.style.overflow = "auto";
         document.body.style.overflow = "auto";
         preloader.classList.add("preloader-finished");
-      }, 4000);
+      }, 3000);
     });
   }, []);
 
