@@ -17,32 +17,32 @@ const Award = () => {
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute left-[20%] top-[5%]  object-contain"
+          className="absolute w-4 lg:w-fit left-[20%] top-[5%]  object-contain"
         />
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute left-[72.7%] top-[22.5%] w-[20px]  object-contain"
+          className="absolute left-[72.7%] top-[22.5%] w-4 lg:w-[20px]  object-contain"
         />
         <img
           src={Star1}
           alt="star icon"
-          className="absolute left-[56%] top-[35%] w-[15px] object-contain"
+          className="absolute left-[56%] top-[35%] w-4 lg:w-[15px] object-contain"
         />
         <img
           src={Star1}
           alt="star icon"
-          className="absolute left-[94%] top-[40%] w-[15px] object-contain"
+          className="absolute left-[94%] top-[40%] w-4 lg:w-[15px] object-contain"
         />
         <img
           src={Star4}
           alt="star icon"
-          className="absolute left-[82%] top-[90%] w-[15px] object-contain"
+          className="absolute left-[82%] top-[90%]  w-4 lg:w-[15px] object-contain"
         />
         <img
           src={Star1}
           alt="star icon"
-          className="absolute left-[20%] top-[86.3%] w-[15px] object-contain"
+          className="absolute left-[20%] top-[86.3%]  w-4 lg:w-[15px] object-contain"
         />
       </div>
       <div className="w-full h-full flex flex-col justify-center items-center lg:justify-end lg:items-end relative z-30">
