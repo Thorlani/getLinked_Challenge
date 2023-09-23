@@ -14,17 +14,17 @@ const Rules = () => {
           <img
             src={Flare}
             alt="flare"
-            className="absolute z-10 opacity-40 object-cover top-[-120%] "
+            className="absolute z-10 opacity-40 object-cover left-[-10rem] lg:left-0 top-[-170%] lg:top-[-120%] "
           />
           <img
             src={Star2}
             alt="star icon"
-            className="absolute z-20 -top-5 right-[50%]"
+            className="absolute w-4 lg:w-fit z-20 top-[2.25rem] lg:-top-5 right-[2%] lg:right-[50%]"
           />
           <img
             src={Star1}
             alt="star icon"
-            className="absolute z-20 top-[90%] right-[4%] w-[20px] object-contain"
+            className="absolute z-20 top-[98%] lg:top-[90%] right-[80%] lg:right-[4%] w-4 lg:w-[20px] object-contain"
           />
           <Subtext
             width="max-w-[107px] lg:max-w-[170px]"
