@@ -27,6 +27,7 @@ const HeroSection = () => {
               ease: "linear",
               duration: 3,
               repeat: Infinity,
+              alternate: true,
               delay: 0.5,
             }}
             src={Star1}
