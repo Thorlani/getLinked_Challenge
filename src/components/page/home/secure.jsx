@@ -16,69 +16,43 @@ const Secure = () => {
         <img
           src={Star4}
           alt="star icon"
-          className="absolute left-[32%] top-[18%] w-[18px]  object-contain"
+          className="absolute left-[32%] top-[18%]  w-4 lg:w-[18px]  object-contain"
         />
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute left-[42%] top-[33%] w-[20px]  object-contain"
+          className="absolute left-[42%] top-[33%]  w-4 lg:w-[20px]  object-contain"
         />
         <img
           src={Star1}
           alt="star icon"
-          className="absolute left-[82%] top-[40%] w-[15px]  object-contain"
+          className="absolute left-[82%] top-[40%]  w-4 lg:w-[15px]  object-contain"
         />
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute z-20 left-[62%] top-[63%] w-[15px]  object-contain"
+          className="absolute z-20 left-[62%] top-[63%]  w-4 lg:w-[15px]  object-contain"
         />
         <img
           src={Star1}
           alt="star icon"
-          className="absolute z-20 left-[57%] top-[73%] w-[15px]  object-contain"
+          className="absolute z-20 left-[57%] top-[73%]  w-4 lg:w-[15px]  object-contain"
         />
         <img
           src={Star4}
           alt="star icon"
-          className="absolute z-20 left-[93%] top-[85%] w-[20px]  object-contain"
+          className="absolute z-20 left-[93%] top-[85%]  w-4 lg:w-[20px]  object-contain"
         />
         <img
           src={SataGra}
           alt="sata icon"
-          className="absolute left-[-2%] top-[83%] w-[15px]  object-contain"
+          className="absolute left-[-2%] top-[83%]  w-4 lg:w-[15px]  object-contain"
         />
         <img
           src={Flare}
           alt="A flare image"
           className="absolute z-10 top-[20%] lg:top-[48%] right-[-64%] lg:left-[-28%] w-[640px] h-[640px] object-contain"
         />
-
-        {/* <img
-          src="/public/icons/sata gra.png"
-          alt="sata icon"
-          className="absolute left-[72.7%] top-[22.5%] w-[20px]  object-contain"
-        />
-        <img
-          src="/public/icons/star1.png"
-          alt="sata icon"
-          className="absolute left-[56%] top-[35%] w-[15px] object-contain"
-        />
-        <img
-          src="/public/icons/star1.png"
-          alt="sata icon"
-          className="absolute left-[94%] top-[40%] w-[15px] object-contain"
-        />
-        <img
-          src="/public/icons/star4.png"
-          alt="sata icon"
-          className="absolute left-[82%] top-[90%] w-[15px] object-contain"
-        />
-        <img
-          src="/public/icons/star1.png"
-          alt="sata icon"
-          className="absolute left-[20%] top-[86.3%] w-[15px] object-contain"
-        /> */}
       </div>
       <div className="w-full h-full flex flex-col lg:flex-row lg:gap-10 items-end relative z-20">
         <div className="w-full lg:w-[50%] h-fit flex flex-col justify-center items-center lg:justify-start lg:items-start gap-7 lg:gap-[3rem] relative">
