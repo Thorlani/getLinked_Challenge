@@ -80,7 +80,7 @@ const Secure = () => {
           className="absolute left-[20%] top-[86.3%] w-[15px] object-contain"
         /> */}
       </div>
-      <div className="w-full h-full flex flex-col lg:flex-row lg:gap-10 items-end relative z-10">
+      <div className="w-full h-full flex flex-col lg:flex-row lg:gap-10 items-end relative z-20">
         <div className="w-full lg:w-[50%] h-fit flex flex-col justify-center items-center lg:justify-start lg:items-start gap-7 lg:gap-[3rem] relative">
           <div className="w-full flex flex-col justify-center items-center lg:justify-start lg:items-start">
             <Subtext
