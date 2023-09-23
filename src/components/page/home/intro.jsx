@@ -23,7 +23,11 @@ const Intro = () => {
             alt="Idea image"
             className="hidden lg:block"
           />
-          <img src={Idea} alt="Idea image" className="block lg:hidden" />
+          <img
+            src={Idea}
+            alt="Idea image"
+            className="block md:relative md:left-[6rem] lg:hidden"
+          />
           <motion.img
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -34,12 +38,12 @@ const Intro = () => {
             }}
             src={Arrow}
             alt="arrow icon"
-            className="absolute right-10 -bottom-3"
+            className="absolute right-[10rem] lg:right-10 bottom-[-2rem] lg:-bottom-3"
           />
           <img
             src={Sata}
             alt="sata icon"
-            className="absolute -left-6 top-[150px]"
+            className="absolute left-[1.5rem] lg:-left-6 top-[150px]"
           />
         </div>
         <div className="w-full lg:w-[50%] h-fit flex flex-col justify-center items-center lg:justify-start lg:items-start relative">
@@ -53,7 +57,7 @@ const Intro = () => {
             whileInView={{ opacity: 1 }}
             transition={{
               ease: "easeInOut",
-              delay: .5,
+              delay: 0.5,
               duration: 1,
             }}
             className="text-center lg:text-left text-white font-montserrat text-[13px] lg:text-sm max-w-[300px] lg:max-w-[520px] leading-[27.5px]"
@@ -68,7 +72,7 @@ const Intro = () => {
           <img
             src={StarPu}
             alt="star pu icon"
-            className="absolute right-20 w-5 object-contain top-[37px]"
+            className="absolute right-7 lg:right-20 w-4 lg:w-5 object-contain top-[37px]"
           />
         </div>
       </div>
