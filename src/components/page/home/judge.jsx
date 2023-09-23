@@ -39,7 +39,7 @@ const Judge = () => {
           <img
             src={Sata}
             alt="sata icon"
-            className="absolute left-[22%] top-[-18%]"
+            className="absolute w-4 lg:w-fit left-[50%] lg:left-[22%] top-[-10%] lg:top-[-18%]"
           />
           <img
             src={Flare}
