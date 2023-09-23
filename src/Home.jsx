@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./components/modecule/navbar";
 import Footer from "./components/modecule/footer";
 import HeroSection from "./components/page/home/heroSection";

@@ -5,9 +5,88 @@
     <link rel="icon" type="image/svg+xml" href="/getlinked.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GetLinked Challenge</title>
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <style>
+      .preloader {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          270deg,
+          #903aff 0%,
+          #d434fe 56.42%,
+          #ff26b9 99.99%,
+          #fe34b9 100%
+        );
+        z-index: 999999999;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s ease;
+      }
+
+      .preloader-finished {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .spinner {
+        display: grid;
+        grid-template-areas: "stack";
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+
+        grid-area: stack;
+
+        animation: spinner 1s linear infinite alternate-reverse;
+      }
+
+      .dot:nth-child(2) {
+        animation-delay: 333ms;
+      }
+      .dot:nth-child(3) {
+        animation-delay: 667ms;
+      }
+
+      @keyframes spinner {
+        0% {
+          transform: translateX(50px);
+        }
+        100% {
+          transform: translateX(-50px);
+        }
+      }
+    </style>
+    <div id="root">
+      <div class="preloader">
+        <div
+          class="w-fit h-fit flex flex-col justify-center items-center gap-8"
+        >
+          <h3 class="text-white lg:text-xl font-clash-display tracking-wider">
+            Loading your
+            <span class="bg-purple p-2 lg:p-3 rounded-lg">
+              Get<span class="text-strong-pink">Linked</span>
+            </span>
+            experience...
+          </h3>
+          <div class="spinner">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
