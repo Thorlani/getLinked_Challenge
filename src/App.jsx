@@ -12,6 +12,8 @@ import {
 import Home from "./Home";
 import Contact from "./Contact";
 import Register from "./Register";
+
+//setting up the routes
 const Root = () => {
   return (
     <>

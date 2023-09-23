@@ -125,34 +125,38 @@ const RegisterForm = (props) => {
             CREATE YOUR ACCOUNT
           </p>
         </div>
-        <div className="flex flex-col gap-[15px] lg:gap-[29px]">
-          <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-between gap-[15px] lg:gap-0">
-            <div className="w-full lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="teamName">Team's name</label>
-              <input
-                placeholder="Enter the name of your group"
-                type="text"
-                name="teamName"
-                value={registerForm.teamName}
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              />
+        <div className="flex flex-col gap-y-[40px]">
+          <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-between gap-y-[55px]">
+            <div className="w-full h-[60px] lg:w-[47%] flex flex-col">
+              <div className="w-full h-fit">
+                <label htmlFor="teamName">Team's name</label>
+                <input
+                  placeholder="Enter the name of your group"
+                  type="text"
+                  name="teamName"
+                  value={registerForm.teamName}
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                />
+              </div>
               {inputChecker === true && registerForm.teamName === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your team's name
                 </p>
               )}
             </div>
-            <div className="w-full lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="phone">Phone</label>
-              <input
-                placeholder="Enter your phone number"
-                type="number"
-                name="phoneNumber"
-                value={registerForm.phoneNumber}
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              />
+            <div className="w-full h-[60px] lg:w-[47%] flex flex-col">
+              <div className="w-full h-fit">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  placeholder="Enter your phone number"
+                  type="number"
+                  name="phoneNumber"
+                  value={registerForm.phoneNumber}
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                />
+              </div>
               {inputChecker === true && registerForm.phoneNumber === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your phone number
@@ -160,33 +164,37 @@ const RegisterForm = (props) => {
               )}
             </div>
           </div>
-          <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-between gap-[15px] lg:gap-0">
-            <div className="w-full lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="teamName">Email</label>
-              <input
-                placeholder="Enter your email address"
-                type="email"
-                name="email"
-                value={registerForm.email}
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              />
+          <div className="w-full h-fit flex flex-col lg:flex-row items-center justify-between gap-y-[55px]">
+            <div className="w-full h-[60px] lg:w-[47%] flex flex-col">
+              <div className="w-full h-fit">
+                <label htmlFor="teamName">Email</label>
+                <input
+                  placeholder="Enter your email address"
+                  type="email"
+                  name="email"
+                  value={registerForm.email}
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                />
+              </div>
               {inputChecker === true && registerForm.email === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your email
                 </p>
               )}
             </div>
-            <div className="w-full lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="phone">Project Topic</label>
-              <input
-                placeholder="What is your group project topic"
-                type="text"
-                name="projectTopic"
-                value={registerForm.projectTopic}
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              />
+            <div className="w-full h-[60px] lg:w-[47%] flex flex-col">
+              <div>
+                <label htmlFor="phone">Project Topic</label>
+                <input
+                  placeholder="What is your group project topic"
+                  type="text"
+                  name="projectTopic"
+                  value={registerForm.projectTopic}
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                />
+              </div>
               {inputChecker === true && registerForm.projectTopic === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your project topic
@@ -194,48 +202,72 @@ const RegisterForm = (props) => {
               )}
             </div>
           </div>
-          <div className="w-full h-fit flex flex-row items-center justify-between">
-            <div className="w-[64%] lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="teamName">Category</label>
-              <select
-                name="category"
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              >
-                <option value="">Select your category</option>
-                {categoryList.map((item) => {
-                  return (
-                    <option value={item?.id} className="text-strong-pink">
-                      {item?.name}
-                    </option>
-                  );
-                })}
-              </select>
+          <div className="w-full h-fit flex flex-row items-center justify-between gap-y-[55px]">
+            <div className="w-[64%] h-[60px] lg:w-[47%] flex flex-col">
+              <div className="w-full h-fit">
+                <label htmlFor="teamName">Category</label>
+                <select
+                  name="category"
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                >
+                  <option value="">Select your category</option>
+                  {categoryList.map((item) => {
+                    return (
+                      <option value={item?.id} className="text-strong-pink">
+                        {item?.name}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
               {inputChecker === true && registerForm.category === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your category
                 </p>
               )}
             </div>
-            <div className="w-[28%] lg:w-[47%] flex flex-col gap-[11px]">
-              <label htmlFor="phone">Group Size</label>
-              <select
-                name="groupSize"
-                onChange={handleChange}
-                className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
-              >
-                <option value="">select</option>
-                <option  className="text-strong-pink" value="1">1</option>
-                <option  className="text-strong-pink" value="2">2</option>
-                <option  className="text-strong-pink" value="3">3</option>
-                <option  className="text-strong-pink" value="4">4</option>
-                <option  className="text-strong-pink" value="5">5</option>
-                <option  className="text-strong-pink" value="6">6</option>
-                <option  className="text-strong-pink" value="7">7</option>
-                <option  className="text-strong-pink" value="8">8</option>
-                <option  className="text-strong-pink" value="9">9</option>
-                <option  className="text-strong-pink" value="10">10</option>
-              </select>
+            <div className="w-[28%] h-[60px] lg:w-[47%] flex flex-col">
+              <div className="w-full h-fit">
+                <label htmlFor="phone">Group Size</label>
+                <select
+                  name="groupSize"
+                  onChange={handleChange}
+                  className="h-[47px] p-[11px] w-full border-1 outline-none input lg:text-xs"
+                >
+                  <option value="">select</option>
+                  <option className="text-strong-pink" value="1">
+                    1
+                  </option>
+                  <option className="text-strong-pink" value="2">
+                    2
+                  </option>
+                  <option className="text-strong-pink" value="3">
+                    3
+                  </option>
+                  <option className="text-strong-pink" value="4">
+                    4
+                  </option>
+                  <option className="text-strong-pink" value="5">
+                    5
+                  </option>
+                  <option className="text-strong-pink" value="6">
+                    6
+                  </option>
+                  <option className="text-strong-pink" value="7">
+                    7
+                  </option>
+                  <option className="text-strong-pink" value="8">
+                    8
+                  </option>
+                  <option className="text-strong-pink" value="9">
+                    9
+                  </option>
+                  <option className="text-strong-pink" value="10">
+                    10
+                  </option>
+                </select>
+              </div>
               {inputChecker === true && registerForm.groupSize === "" && (
                 <p className="text-[red] text-xs mt-2">
                   Please fill in your category
