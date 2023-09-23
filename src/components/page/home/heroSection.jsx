@@ -64,7 +64,7 @@ const HeroSection = () => {
                   ease: "easeOut",
                   duration: 1,
                 }}
-                className="w-[115] lg:w-[255] h-[7px] lg:h-[17px] relative right-[47px] lg:right-0"
+                className="w-[115] lg:w-[255] h-[7px] lg:h-[17px] relative right-[47px] md:right-[175px] lg:right-0"
                 viewBox="0 0 255 17"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,40 +86,101 @@ const HeroSection = () => {
               className="absolute z-10 opacity-40 object-contain top-[-60%] right-[-100px]"
             />
             <div className="w-full relative flex z-20 justify-center items-center lg:justify-start lg:items-start">
-              <h1 className="text-white font-bold text-4xl lg:text-7xl font-clash-display">
+              <motion.h1
+                initial={{ opacity: 0.4, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  ease: "linear",
+                  duration: 1,
+                }}
+                className="text-white font-bold text-4xl lg:text-7xl font-clash-display"
+              >
                 getlinked Tech
-              </h1>
+              </motion.h1>
               <div>
                 <img
                   src={Bob}
                   alt="bob"
-                  className="absolute w-[25px] lg:w-[40px] object-contain right-[72px] lg:right-20 -top-7 lg:-top-10"
+                  className="absolute w-[25px] lg:w-[40px] object-contain right-[72px] md:right-[232px] lg:right-20 -top-7 lg:-top-10"
                 />
               </div>
             </div>
             <div className="w-full relative flex justify-center items-center lg:justify-start lg:items-start">
-              <h1 className="text-white font-bold text-4xl lg:text-7xl font-clash-display ml-[-3.6rem] lg:ml-0">
-                Hackathon <span className="text-strong-pink">1.0</span>
-              </h1>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  ease: "linear",
+                  delay: 0.5,
+                  duration: 1,
+                }}
+                className="text-white font-bold text-4xl lg:text-7xl font-clash-display ml-[-3.6rem] lg:ml-0"
+              >
+                Hackathon{" "}
+                <motion.span
+                  initial={{ opacity: 0, y: -40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 1,
+                    duration: 1,
+                  }}
+                  className="text-strong-pink"
+                >
+                  1.0
+                </motion.span>
+              </motion.h1>
               <div>
-                <img
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 1,
+                    duration: 1,
+                  }}
                   src={Chain}
                   alt="chain"
-                  className="absolute w-[32px] lg:w-[70px] object-contain right-[3rem] lg:-right-8 top-1"
+                  className="absolute w-[32px] lg:w-[70px] object-contain right-[3rem] md:right-[13.5rem] lg:-right-8 top-1"
                 />
-                <img
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 1,
+                    duration: 1,
+                  }}
                   src={Blast}
                   alt="blast"
-                  className="absolute w-[22px] lg:w-[50px] object-contain right-[20px] lg:right-[-100px] top-2"
+                  className="absolute w-[22px] lg:w-[50px] object-contain right-[20px] md:right-[11.5rem] lg:right-[-100px] top-2"
                 />
               </div>
             </div>
             <div className="w-full h-fit flex flex-col justify-center items-center lg:justify-start lg:items-start">
-              <p className="text-white font-montserrat text-[13px] lg:text-lg text-center lg:text-left max-w-[264px] lg:max-w-[470px] mt-2 leading-[33.2px]">
+              <motion.p
+                initial={{ opacity: 0, x: 120 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  ease: "linear",
+                  delay: 0.8,
+                  duration: 1.1,
+                }}
+                className="text-white font-montserrat text-[13px] lg:text-lg text-center lg:text-left max-w-[264px] lg:max-w-[470px] mt-2 leading-[33.2px]"
+              >
                 Participate in getlinked tech Hackathon 2023 stand a chance to
                 win a Big prize
-              </p>
-              <div className="mt-6 lg:mt-10">
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, x: -120 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  ease: "linear",
+                  delay: 0.8,
+                  duration: 1.1,
+                }}
+                className="mt-6 lg:mt-10"
+              >
                 <Button
                   onClick={() => navigate("/register")}
                   radius="small"
@@ -127,23 +188,63 @@ const HeroSection = () => {
                 >
                   <p className="font-montserrat">Register</p>
                 </Button>
-              </div>
+              </motion.div>
               <div className="flex font-normal w-[200px] lg:w-[250px] mt-7 lg:mt-11 justify-between font-unica text-5xl lg:text-6xl text-white">
-                <p>
+                <motion.p
+                  initial={{ opacity: 0, y: -60 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 0.5,
+                    duration: 1.1,
+                  }}
+                >
                   00<span className="text-sm">H</span>
-                </p>
-                <p>
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: -60 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 1,
+                    duration: 1.1,
+                  }}
+                >
                   00<span className="text-sm">M</span>
-                </p>
-                <p>
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: -60 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    ease: "linear",
+                    delay: 1.5,
+                    duration: 1.1,
+                  }}
+                >
                   00<span className="text-sm">S</span>
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>
           <div className="w-full lg:w-[50%] h-full relative">
-            <div className="w-full h-full relative z-20 bg-hero-section bg-center bg-no-repeat bg-contain"></div>
-            <img
+            <motion.div
+              initial={{ opacity: 0, y: -50, x: 50 }}
+              animate={{ opacity: 1, y: 0, x: 0 }}
+              transition={{
+                ease: "linear",
+                delay: 0.5,
+                duration: 1.1,
+              }}
+              className="w-full h-full relative z-20 bg-hero-section bg-center bg-no-repeat bg-contain"
+            ></motion.div>
+            <motion.img
+              initial={{ opacity: 0, y: -50, x: -50 }}
+              animate={{ opacity: 1, y: 0, x: 0 }}
+              transition={{
+                ease: "linear",
+                delay: 1,
+                duration: 1.1,
+              }}
               src={Stars}
               alt="stars"
               className="absolute z-30 w-[90%] h-[90%] object-contain top-0 left-0"
@@ -153,7 +254,14 @@ const HeroSection = () => {
               alt="purple flare"
               className="absolute z-20 w-[120%] h-[120%] object-contain top-[-100px] right-[-100px]"
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                ease: "linear",
+                delay: 1.5,
+                duration: 1.1,
+              }}
               src={Metrix}
               alt="Metrix"
               className="absolute z-10 w-[120%] object-contain top-0"

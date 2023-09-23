@@ -4,6 +4,7 @@ import SataGra from "../../../assets/icons/sata gra.png";
 import Star1 from "../../../assets/icons/star1.png";
 import Flare from "../../../assets/images/flare.png";
 import Sponsor from "../../../assets/images/sponsors.png";
+import { motion } from "framer-motion";
 
 const Sponsors = () => {
   return (
@@ -41,13 +42,29 @@ const Sponsors = () => {
               whiteText="Partners and Sponsors"
               pinkText=""
             />
-            <p className="font-montserrat text-white text-sm max-w-[452px] text-center leading-[27.76px]">
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                ease: "easeInOut",
+                delay: 0.5,
+                duration: 1,
+              }}
+              className="font-montserrat text-white text-sm max-w-[452px] text-center leading-[27.76px]"
+            >
               Getlinked Hackathon 1.0 is honored to have the following major
               companies as its partners and sponsors
-            </p>
+            </motion.p>
           </div>
           <div className="w-fit h-fit p-[8%] border-strong-pink rounded border-1 mt-12">
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                ease: "linear",
+                delay: 0.5,
+                duration: 1,
+              }}
               src={Sponsor}
               alt="list of GetLinked Hackathon sponsors"
               className=""

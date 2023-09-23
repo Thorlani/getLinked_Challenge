@@ -3,6 +3,7 @@ import Subtext from "../../atom/subtext";
 import SataGra from "../../../assets/icons/sata gra.png";
 import Star1 from "../../../assets/icons/star1.png";
 import Star4 from "../../../assets/icons/star4.png";
+import { motion } from "framer-motion";
 
 const Timeline = () => {
   return (
@@ -32,14 +33,32 @@ const Timeline = () => {
               whiteText="Timeline"
               pinkText=""
             />
-            <p className="font-montserrat text-white text-sm max-w-[292px] lg:max-w-[346px] text-center leading-[24.136px] lg:leading-[27.76px]">
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                ease: "easeInOut",
+                delay: 0.5,
+                duration: 1,
+              }}
+              className="font-montserrat text-white text-sm max-w-[292px] lg:max-w-[346px] text-center leading-[24.136px] lg:leading-[27.76px]"
+            >
               Here is the breakdown of the time we anticipate using for the
               upcoming event.
-            </p>
+            </motion.p>
           </div>
 
           {/* This section is for Desktop view */}
-          <div className="w-full h-fit mt-[4rem] hidden lg:flex flex-col justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0.4 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              ease: "easeInOut",
+              delay: 1,
+              duration: 1,
+            }}
+            className="w-full h-fit mt-[4rem] hidden lg:flex flex-col justify-center items-center"
+          >
             <div className="w-[3px] h-[137px] bg-strong-pink"></div>
             <div className="w-full h-fit grid grid-cols-[1fr_.5fr_1fr] place-items-center">
               <div className="w-full flex flex-col items-end">
@@ -171,10 +190,19 @@ const Timeline = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* This section is for mobile view */}
-          <div className="w-full h-fit mt-[4rem] flex lg:hidden flex-col gap-7 justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0.4 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              ease: "easeInOut",
+              delay: 1,
+              duration: 1,
+            }}
+            className="w-full h-fit mt-[4rem] flex lg:hidden flex-col gap-7 justify-center items-center"
+          >
             <div className="w-full h-fit grid grid-cols-[.2fr_1fr] ">
               <div className="flex flex-col items-center justify-center gap-1">
                 <div className="w-[3px] h-[77px] bg-strong-pink"></div>
@@ -307,7 +335,7 @@ const Timeline = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

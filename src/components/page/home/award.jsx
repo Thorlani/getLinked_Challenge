@@ -8,6 +8,7 @@ import Gold from "../../../assets/icons/gold.png";
 import Bronze from "../../../assets/icons/bronze.png";
 import Flare from "../../../assets/images/flare.png";
 import AwardImage from "../../../assets/images/award.png";
+import { motion } from "framer-motion";
 
 const Award = () => {
   return (
@@ -51,9 +52,18 @@ const Award = () => {
             pinkText="Rewards"
             width="max-w-[174px]"
           />
-          <p className="max-w-[277px] lg:max-w-[361px] text-center lg:text-left font-montserrat text-sm mt-3">
+          <motion.p
+            initial={{ opacity: 0.4 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              ease: "easeInOut",
+              delay: 0.5,
+              duration: 1,
+            }}
+            className="max-w-[277px] lg:max-w-[361px] text-center lg:text-left font-montserrat text-sm mt-3"
+          >
             Highlight of the prizes or rewards for winners and for participants.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="w-full h-full relative z-20 flex flex-col lg:flex-row mt-10 lg:mt-0">
