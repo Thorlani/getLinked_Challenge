@@ -90,6 +90,7 @@ const RegisterForm = (props) => {
     }
   };
 
+  //Form input fields onChange function
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
     setRegisterForm((prevFormData) => {

@@ -22,7 +22,11 @@ const RegisterSection = () => {
     document.documentElement.style.overflow = "auto";
     document.body.style.overflow = "auto";
   }
-  console.log(isSubmitted);
+
+  //A function to clear the input field and close the popup
+  const closePopup = () => {
+    window.location.reload(true);
+  };
 
   return (
     <>
@@ -59,7 +63,10 @@ const RegisterSection = () => {
             <img src={RegisterImage} alt="A man sitting on a seat" />
           </div>
           <div className="w-full lg:w-[50%] h-full">
-            <RegisterForm isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} />
+            <RegisterForm
+              isSubmitted={isSubmitted}
+              setIsSubmitted={setIsSubmitted}
+            />
           </div>
         </div>
       </div>
@@ -90,7 +97,7 @@ const RegisterSection = () => {
               />
             </div>
             <button
-              onClick={() => navigate("/")}
+              onClick={closePopup}
               radius="small"
               className={`btn h-[53px] rounded text-white shadow-lg w-full mt-3`}
             >
