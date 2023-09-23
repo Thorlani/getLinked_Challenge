@@ -38,7 +38,7 @@ const Navbar = (props) => {
             <li
               onClick={() => navigate("/contact")}
               className={`${
-                location.pathname === "/contact" || "/register" ? "contact" : ""
+                location.pathname === "/" ? "#fff" : "contact"
               }`}
             >
               Contact
