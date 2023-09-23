@@ -11,6 +11,7 @@ import Stars from "../../../assets/images/stars.png";
 import Metrix from "../../../assets/images/metrix.png";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@nextui-org/react";
+import { cubicBezier, motion } from "framer-motion";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -19,10 +20,18 @@ const HeroSection = () => {
       <hr />
       <div className="w-full h-[90vh] flex items-center flex-col px-[4%] pt-4">
         <div className="w-full h-[10vh] flex justify-end">
-          <img
+          <motion.img
+            initial={{ opacity: 0.3 }}
+            animate={{ opacity: 0.6 }}
+            transition={{
+              ease: "linear",
+              duration: 3,
+              repeat: Infinity,
+              delay: 0.5,
+            }}
             src={Star1}
             alt="Star"
-            className="absolute w-[20px] object-contain left-[9%] top-[27%]"
+            className="absolute w-[20px] object-contain left-[9%] top-[2.3%]"
           />
           <img
             src={Star2}
@@ -35,11 +44,25 @@ const HeroSection = () => {
             className="absolute w-[20px] object-contain left-[35%] top-[87%]"
           />
           <div className="w-full flex flex-col">
-            <h2 className="italic font-bold md:text-xl lg:text-3xl font-clash-display text-center lg:text-right">
+            <motion.h2
+              initial={{ x: 150 }}
+              animate={{ x: 0 }}
+              transition={{
+                ease: "linear",
+                duration: 1,
+              }}
+              className="italic font-bold md:text-xl lg:text-3xl font-clash-display text-center lg:text-right"
+            >
               Igniting a Revolution in HR Innovation
-            </h2>
+            </motion.h2>
             <div className="w-full h-fit flex justify-end items-end">
-              <svg
+              <motion.svg
+                initial={{ y: 150 }}
+                animate={{ y: 0 }}
+                transition={{
+                  ease: "easeOut",
+                  duration: 1,
+                }}
                 className="w-[115] lg:w-[255] h-[7px] lg:h-[17px] relative right-[47px] lg:right-0"
                 viewBox="0 0 255 17"
                 fill="none"
@@ -50,7 +73,7 @@ const HeroSection = () => {
                   stroke="#FF26B9"
                   stroke-width="5"
                 />
-              </svg>
+              </motion.svg>
             </div>
           </div>
         </div>
