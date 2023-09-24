@@ -33,7 +33,7 @@ const ContactSection = () => {
         <img
           src={Star1}
           alt="Star"
-          className="absolute w-5 lg:w-[25px] object-contain left-[95%] top-[90%]"
+          className="absolute w-3 lg:w-[25px] object-contain left-[87%] lg:left-[95%] top-[62%] lg:top-[90%]"
         />
         <img
           src={SataGra}
