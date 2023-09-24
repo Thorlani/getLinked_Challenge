@@ -43,7 +43,7 @@ const RegisterSection = () => {
           <img
             src={Star1}
             alt="Star"
-            className="absolute w-[10px] object-contain left-[86%] top-[88%]"
+            className="absolute w-[10px] object-contain left-[86%] top-[88%] hidden lg:block"
           />
           <img
             src={Star3}
@@ -58,12 +58,12 @@ const RegisterSection = () => {
           <img
             src={Sata}
             alt="Star"
-            className="absolute w-4 lg:w-[20px] object-contain left-[45%] top-[67%]"
+            className="absolute w-3 lg:w-[20px] object-contain left-[90%] lg:left-[45%] top-[76%] lg:top-[67%]"
           />
           <img
             src={Star2}
             alt="Star"
-            className="absolute w-5 lg:w-[25px] object-contain left-[15%] top-[82%]"
+            className="absolute w-4 lg:w-[25px] object-contain left-[5%] lg:left-[15%] top-[40%] lg:top-[82%]"
           />
           <img
             src={Flare}
