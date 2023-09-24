@@ -17,6 +17,7 @@ const ContactSection = () => {
 
   return (
     <div className="w-full h-full relative p-[8%] overflow-clip">
+      {/* This div is the background that has the stars */}
       <div className="w-full h-full absolute top-0 left-0 z-10">
         <img
           src={Star1}

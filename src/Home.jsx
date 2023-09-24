@@ -13,6 +13,15 @@ import Secure from "./components/page/home/secure";
 import upArrow from "./assets/images/upArrow.png";
 
 const Home = () => {
+  //Implement locomotive to make the scroll smooth
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
+  //Implementation for the scroll to top of the page
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -41,12 +50,14 @@ const Home = () => {
 
   return (
     <div className="relative overflow-x-clip">
-      <button
-        onClick={scrollToTop}
-        className="w-[40px] h-[40px] btn rounded-[50%] flex justify-center items-center fixed bottom-[20px] right-[40px] z-[999999]"
-      >
-        <img src={upArrow} alt="back to top arrow" width={25} height={25} />
-      </button>
+      {window.scrollY > 300 && (
+        <button
+          onClick={scrollToTop}
+          className="w-[40px] h-[40px] btn rounded-[50%] flex justify-center items-center fixed bottom-[20px] right-[40px] z-[999999]"
+        >
+          <img src={upArrow} alt="back to top arrow" width={25} height={25} />
+        </button>
+      )}
       <Navbar />
       <HeroSection />
       <Intro />

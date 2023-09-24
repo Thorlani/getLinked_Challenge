@@ -9,6 +9,7 @@ import Flare from "../../../assets/images/flare.png";
 import Congratulation from "../../../assets/images/congratulation.png";
 import emoji from "../../../assets/images/emoji.png";
 import { Button } from "@nextui-org/react";
+import BackIcon from "../../../assets/icons/backIcon.png";
 
 const RegisterSection = () => {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ const RegisterSection = () => {
   return (
     <>
       <div className="w-full h-full relative p-[8%] overflow-clip">
+         {/* This div is the background that has the stars */}
         <div className="w-full h-full absolute top-0 left-0 z-10">
           <img
             src={Star1}
@@ -59,6 +61,12 @@ const RegisterSection = () => {
           />
         </div>
         <div className="w-full h-full relative z-20 flex flex-col lg:flex-row justify-center items-center">
+        <div
+          onClick={() => navigate("/")}
+          className="w-full mb-[40px] block lg:hidden"
+        >
+          <img src={BackIcon} alt="Back icon" className="w-[23px] h-[23px]" />
+        </div>
           <div className="w-full lg:w-[50%] h-full hidden lg:flex flex-col gap-[17px]">
             <img src={RegisterImage} alt="A man sitting on a seat" />
           </div>
