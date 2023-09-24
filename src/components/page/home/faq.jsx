@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const Faq = () => {
   return (
     <>
-      <div className="w-full h-fit p-[4%] pt-[8%] flex flex-col lg:flex-row items-center overflow-x-clip">
+      <div id="faq" className="w-full h-fit p-[4%] pt-[8%] flex flex-col lg:flex-row items-center overflow-x-clip">
         <div className="w-full lg:w-[50%] h-fit relative flex flex-col justify-center items-center lg:justify-start lg:items-start mb-[7rem] lg:mb-0">
           <img
             src={Sata}

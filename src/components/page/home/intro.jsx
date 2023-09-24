@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <div className="w-full h-fit px-[4%] py-[10%] lg:p-[4%] flex flex-col gap-14 lg:gap-0 lg:flex-row items-center">
+      <div id="overview" className="w-full h-fit px-[4%] py-[10%] lg:p-[4%] flex flex-col gap-14 lg:gap-0 lg:flex-row items-center">
         <div className="w-full lg:w-[50%] h-fit relative">
           <motion.img
             initial={{ opacity: 0, x: -50 }}

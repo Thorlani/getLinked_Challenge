@@ -32,14 +32,18 @@ const Navbar = (props) => {
 
         <div className="w-[54%] flex items-center justify-between">
           <ul className=" font-montserrat font-normal cursor-pointer text-white w-[60%] flex justify-between items-center">
-            <li>Timeline</li>
-            <li>Overview</li>
-            <li>FAQs</li>
+            <a href="#timeline">
+              <li>Timeline</li>
+            </a>
+            <a href="#overview">
+              <li>Overview</li>
+            </a>
+            <a href="#faq">
+              <li>FAQs</li>
+            </a>
             <li
               onClick={() => navigate("/contact")}
-              className={`${
-                location.pathname === "/" ? "#fff" : "contact"
-              }`}
+              className={`${location.pathname === "/" ? "#fff" : "contact"}`}
             >
               Contact
             </li>

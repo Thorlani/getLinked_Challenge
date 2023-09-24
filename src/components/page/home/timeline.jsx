@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Timeline = () => {
   return (
     <>
-      <div className="w-full h-fit p-[4%] flex flex-col items-center justify-center overflow-x-clip relative">
+      <div id="timeline" className="w-full h-fit p-[4%] flex flex-col items-center justify-center overflow-x-clip relative">
         <div className="w-full h-full bg-[#261d45]/20 bg-bottom absolute z-10">
           <img
             src={SataGra}
